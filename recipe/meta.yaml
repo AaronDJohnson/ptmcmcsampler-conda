@@ -1,0 +1,38 @@
+{% set name = "PTMCMCSampler" %}
+{% set version = "1.0.0" %}
+
+package:
+    name: "{{ name|lower }}"
+    version: "{{ version }}"
+
+source:
+    git_url: https://github.com/jellis18/PTMCMCSampler.git
+    # git_rev:
+    git_depth: 1
+
+build:
+    number: 1
+
+# test:
+#     source_files:
+#         - tests/
+#     commands:
+#         # run tests for enterprise here:
+#         # or we could make a test.sh script
+
+requirements:
+    build:
+        - python
+
+    host:
+        - python
+        - numpy
+        - scipy
+        - acor
+
+    run:
+        - python
+        - numpy
+        - scipy
+        - acor
+
