@@ -22,17 +22,18 @@ build:
 
 requirements:
     build:
-        - python
+        - python=3.7
 
     host:
-        - python
-        - numpy
-        - scipy
-        - acor
+        - python=3.7
+        - defaults::openblas
+        - defaults::numpy
+        - defaults::scipy >=1.2.0
+        - conda-forge::acor
 
     run:
-        - python
-        - numpy
-        - scipy
-        - acor
-
+        - python=3.7
+        - defaults::openblas
+        - defaults::numpy
+        - defaults::scipy >=1.2.0
+        - conda-forge::acor
