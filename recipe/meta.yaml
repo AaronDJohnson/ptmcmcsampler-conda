@@ -26,14 +26,14 @@ requirements:
 
     host:
         - python=3.7
-        - defaults::openblas
-        - defaults::numpy
-        - defaults::scipy >=1.2.0
+        - openblas
+        - numpy
+        - scipy >=1.2.0
         - aarondjohnson::acor
 
     run:
         - python=3.7
-        - defaults::openblas
-        - defaults::numpy
-        - defaults::scipy >=1.2.0
+        - openblas
+        - numpy
+        - scipy >=1.2.0
         - aarondjohnson::acor
